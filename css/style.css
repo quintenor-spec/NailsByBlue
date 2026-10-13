@@ -265,3 +265,21 @@ section { padding: 5rem 0; }
   .float-cta .btn { width: 100%; justify-content: center; }
   body { padding-bottom: 4.5rem; }
 }
+
+/* ---------- Info-strip (home) ---------- */
+.info-strip { padding: 0 0 4rem; }
+.info-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.4rem;
+  border-top: 1px solid var(--line); padding-top: 2.6rem;
+}
+.info-item { display: flex; align-items: flex-start; gap: 1rem; }
+.info-item svg {
+  flex: none; width: 44px; height: 44px; padding: 9px; border-radius: 50%;
+  background: var(--lilac-soft); fill: none; stroke: var(--gold-dark);
+  stroke-width: 1.3; stroke-linecap: round; stroke-linejoin: round;
+}
+.info-item h3 { font-size: 1.3rem; margin: 0 0 .1rem; }
+.info-item p { margin: 0; color: var(--muted); font-size: .95rem; }
+@media (max-width: 900px) {
+  .info-grid { grid-template-columns: 1fr; }
+}
