@@ -329,3 +329,7 @@ section { padding: 5rem 0; }
 }
 .faq-item[open] summary::after { content: "–"; }
 .faq-item p { margin: 0 0 1.2rem; color: var(--muted); }
+
+/* ---------- Adres ---------- */
+.address-line strong { font-weight: 400; color: var(--gold-dark); }
+.footer-grid address { font-style: normal; color: var(--muted); font-size: .95rem; }
