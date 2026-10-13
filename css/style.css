@@ -117,7 +117,7 @@ h3 { font-size: 1.55rem; }
 .hero-grid {
   display: grid; grid-template-columns: 1.1fr .9fr; gap: 3rem; align-items: center;
 }
-.hero p.lead { font-size: 1.2rem; color: var(--muted); max-width: 32em; }
+.hero p.lead { font-size: 1.15rem; color: var(--text); max-width: 32em; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 2rem; }
 .hero-art {
   background: var(--cream); border-radius: 50% 50% var(--radius) var(--radius);
