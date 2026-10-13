@@ -293,3 +293,11 @@ section { padding: 5rem 0; }
   font-family: var(--serif); font-weight: 500; color: var(--gold-dark);
   font-size: clamp(2.6rem, 6vw, 4.4rem); line-height: 1.15; margin: 0 0 .5em;
 }
+
+/* ---------- Ligging & bereikbaarheid (home) ---------- */
+.location { padding-bottom: 2rem; }
+.info-list {
+  list-style: none; margin: 0; padding: 2rem;
+  display: grid; gap: 1.5rem;
+  background: var(--cream); border: 1px solid var(--line); border-radius: var(--radius);
+}
