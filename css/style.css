@@ -283,3 +283,49 @@ section { padding: 5rem 0; }
 @media (max-width: 900px) {
   .info-grid { grid-template-columns: 1fr; }
 }
+
+/* ---------- Hero: zoekwoord-kop (h1) boven de blikvanger ---------- */
+.hero-kicker {
+  font-family: var(--sans); font-weight: 400; line-height: 1.6;
+  margin: 0 0 1rem;
+}
+.hero-title {
+  font-family: var(--serif); font-weight: 500; color: var(--gold-dark);
+  font-size: clamp(2.6rem, 6vw, 4.4rem); line-height: 1.15; margin: 0 0 .5em;
+}
+
+/* ---------- Ligging & bereikbaarheid (home) ---------- */
+.location { padding-bottom: 2rem; }
+.info-list {
+  list-style: none; margin: 0; padding: 2rem;
+  display: grid; gap: 1.5rem;
+  background: var(--cream); border: 1px solid var(--line); border-radius: var(--radius);
+}
+
+/* ---------- Artikel (BIAB & NNT) ---------- */
+.article-block { padding: 2.2rem 0; border-bottom: 1px solid var(--line); }
+.article-block:last-child { border-bottom: 0; }
+.article-block h3 { font-size: 1.35rem; margin-top: 1.6rem; }
+.article-block strong { font-weight: 400; color: var(--text); }
+.check-list { list-style: none; padding: 0; margin: 1rem 0; }
+.check-list li { position: relative; padding-left: 1.8rem; margin-bottom: .5rem; color: var(--muted); }
+.check-list li::before { content: "✦"; position: absolute; left: 0; color: var(--gold); }
+
+/* ---------- Veelgestelde vragen ---------- */
+.faq { display: grid; gap: .9rem; }
+.faq-item {
+  background: var(--cream); border: 1px solid var(--line); border-radius: 16px;
+  padding: 0 1.5rem;
+}
+.faq-item summary {
+  cursor: pointer; list-style: none; position: relative;
+  padding: 1.2rem 2rem 1.2rem 0;
+  font-family: var(--serif); font-size: 1.3rem; font-weight: 500; color: var(--gold-dark);
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after {
+  content: "+"; position: absolute; right: 0; top: 50%; transform: translateY(-50%);
+  font-family: var(--sans); font-weight: 300; font-size: 1.5rem; color: var(--gold);
+}
+.faq-item[open] summary::after { content: "–"; }
+.faq-item p { margin: 0 0 1.2rem; color: var(--muted); }
