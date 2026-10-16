@@ -349,3 +349,17 @@ section { padding: 5rem 0; }
 .btn-icon:hover { background: var(--lilac-soft); transform: translateY(-2px); }
 .btn-icon svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.6; }
 .btn-icon svg .dot { fill: currentColor; stroke: none; }
+
+/* ---------- Voorbeeldfoto's (BIAB) ---------- */
+.photo-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.2rem; margin: 1.8rem 0 .6rem; }
+.photo-grid--single { grid-template-columns: minmax(0, 340px); justify-content: center; }
+.photo { margin: 0; }
+.photo img {
+  width: 100%; aspect-ratio: 4 / 5; object-fit: cover;
+  border-radius: var(--radius); border: 1px solid var(--line);
+}
+.photo figcaption { margin-top: .6rem; font-size: .9rem; color: var(--muted); text-align: center; }
+@media (max-width: 480px) {
+  .photo-grid { gap: .8rem; }
+  .photo figcaption { font-size: .82rem; }
+}
