@@ -243,7 +243,7 @@ section { padding: 5rem 0; }
   .steps { grid-template-columns: repeat(2, 1fr); }
   .footer-grid { grid-template-columns: 1fr; }
 }
-@media (max-width: 760px) {
+@media (max-width: 980px) {
   .nav-toggle { display: block; }
   .nav-links {
     display: none; position: absolute; top: 100%; left: 0; right: 0;
@@ -253,7 +253,12 @@ section { padding: 5rem 0; }
   .nav-links.open { display: flex; }
   .nav-links li { width: 100%; text-align: center; }
   .nav-links a { display: block; padding: .8rem; }
-  .nav > .btn { display: none; }
+  .nav-links a[aria-current="page"] { border-color: transparent; }
+  .nav-actions { order: 2; margin-left: auto; }
+  .nav-toggle { order: 3; }
+}
+@media (max-width: 760px) {
+  .nav-actions .btn-primary { display: none; }
   .brand img { height: 48px; }
   .tips { grid-template-columns: 1fr; }
   .steps { grid-template-columns: 1fr; }
@@ -333,3 +338,14 @@ section { padding: 5rem 0; }
 /* ---------- Adres ---------- */
 .address-line strong { font-weight: 400; color: var(--gold-dark); }
 .footer-grid address { font-style: normal; color: var(--muted); font-size: .95rem; }
+
+/* ---------- Instagram-knop in de kopbalk ---------- */
+.nav-actions { display: flex; align-items: center; gap: .7rem; }
+.btn-icon {
+  display: grid; place-items: center; width: 42px; height: 42px; border-radius: 50%;
+  border: 1px solid var(--gold); color: var(--gold-dark);
+  transition: background .2s, transform .2s;
+}
+.btn-icon:hover { background: var(--lilac-soft); transform: translateY(-2px); }
+.btn-icon svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.6; }
+.btn-icon svg .dot { fill: currentColor; stroke: none; }
