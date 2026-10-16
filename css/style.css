@@ -355,7 +355,7 @@ section { padding: 5rem 0; }
 .photo-grid--single { grid-template-columns: minmax(0, 340px); justify-content: center; }
 .photo { margin: 0; }
 .photo img {
-  width: 100%; aspect-ratio: 4 / 5; object-fit: cover;
+  width: 100%; aspect-ratio: 3 / 4; object-fit: cover;
   border-radius: var(--radius); border: 1px solid var(--line);
 }
 .photo figcaption { margin-top: .6rem; font-size: .9rem; color: var(--muted); text-align: center; }
@@ -363,3 +363,6 @@ section { padding: 5rem 0; }
   .photo-grid { gap: .8rem; }
   .photo figcaption { font-size: .82rem; }
 }
+
+/* Ankerlinks niet achter de vaste kopbalk laten vallen */
+[id] { scroll-margin-top: 100px; }
