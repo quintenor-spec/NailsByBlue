@@ -363,3 +363,6 @@ section { padding: 5rem 0; }
   .photo-grid { gap: .8rem; }
   .photo figcaption { font-size: .82rem; }
 }
+
+/* Ankerlinks niet achter de vaste kopbalk laten vallen */
+[id] { scroll-margin-top: 100px; }
